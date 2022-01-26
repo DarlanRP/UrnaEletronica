@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna</title>
+    <link rel="stylesheet" href="/src/style/style.css">
+</head>
+<body>
+    <div class="urna">
+        <div class="screen">
+            <div class="p1">
+                <div class="p1-left">
+                    <div class="p-header">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class="p-section-1">
+                        <span>VEREADOR</span>
+                    </div>
+                    <div class="p-section-2">
+                        <div class="numero pisc"></div>
+                        <div class="numero"></div>
+                    </div>
+                    <div class="p-footer">
+                        Nome: Fulano<br/>
+                        Partido: Ciclano<br/>
+                        Vice: Beltrano<br/>
+                    </div>
+                </div>
+                <div class="p1-right">
+                    <div class="image">
+                        <img src="/src/images/gaules15.jpg" alt="">
+                        Prefeito
+                    </div>
+                    <div class="image small">
+                        <img src="/src/images/viceGaules.jpg" alt="">
+                        Vice-Prefeito
+                    </div>
+                </div>
+            </div>
+            <div class="p2">
+                Aperte a tela:<br/>
+                CONFIRMA para CONFIRMAR este voto<br/>
+                CORRIGE para REINICIAR este voto
+            </div>
+        </div>
+        <div class="kBoard">
+            <div class="kBoard-line">
+                <div class="kBoard-button" onclick="clicou('1')">1</div>
+                <div class="kBoard-button" onclick="clicou('2')">2</div>
+                <div class="kBoard-button" onclick="clicou('3')">3</div>
+            </div>
+            <div class="kBoard-line">
+                <div class="kBoard-button" onclick="clicou('4')">4</div>
+                <div class="kBoard-button" onclick="clicou('5')">5</div>
+                <div class="kBoard-button" onclick="clicou('6')">6</div>
+            </div>
+            <div class="kBoard-line">
+                <div class="kBoard-button" onclick="clicou('7')">7</div>
+                <div class="kBoard-button" onclick="clicou('8')">8</div>
+                <div class="kBoard-button" onclick="clicou('9')">9</div>
+            </div>
+            <div class="kBoard-line">
+                <div class="kBoard-button" onclick="clicou('0')">0</div>
+            </div>
+            <div class="kBoard-line">
+                <div class="kBoard-button btn-white" onclick="branco()">BRANCO</div>
+                <div class="kBoard-button btn-orange"onclick="corrige()">CORRIGE</div>
+                <div class="kBoard-button btn-green" onclick="confirmar()">CONFIRMA</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/src/js/etapas.js"></script>
+    <script src="/src/js/script.js"></script>
+</body>
+</html>
